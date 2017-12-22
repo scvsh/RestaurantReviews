@@ -7,8 +7,7 @@ Udelp has more than 10 restaurant and business reviews worldwide. Whether you're
 
 
 1. Clone this repository&cd to the folder
-2. Run ```python -m http.server 3000
-```
+2. Run ```python -m http.server 3000```
 3. Go to  **http://localhost:3000** in your browser
 4. Select the place you want to review
 
