@@ -10,22 +10,22 @@
 
 <body>
   <header role="banner">
-    <nav>
-      <h1><a href="/" tabindex="1">UDELP</a></h1>
+    <nav >
+      <h1><a tabindex="-1" href="/" >UDELP</a></h1>
     </nav>
   </header>
 
   <main id="maincontent" role="main">
-    <section id="map-container">
-      <div id="map"></div>
+    <section id="map-container" role="application">
+      <div id="map" tabindex="0"></div>
     </section>
     <section>
-      <div class="filter-options" role="navigation">
+       <div class="filter-options" role="navigation" tabindex="1">
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" tabindex="2">
+        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" tabindex="3">
+        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>
@@ -38,7 +38,7 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-KJ2Zl3Ng0x_yEEUr0iQhjjKzVdKJPQA&libraries=places&callback=initMap"></script>
 
 
-  <footer id="footer" role="contentinfo">
+  <footer id="footer">
     Copyright (c) 2017 <a href="/"><strong>UDELP</strong></a> All Rights Reserved.
   </footer>
 
